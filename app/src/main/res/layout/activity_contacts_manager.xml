@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ro.pub.cs.systems.eim.lab04.contactsmanager.ContactsManagerActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/Hide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show Additional Fields" />
+
+                <EditText
+                    android:id="@+id/Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Name"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name" />
+
+                <EditText
+                    android:id="@+id/Number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Number"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="textPersonName"
+                    android:text="Number" />
+
+                <EditText
+                    android:id="@+id/Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Email"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Email" />
+
+                <EditText
+                    android:id="@+id/Postal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Postal address"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Postal address" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/Save"
+                        android:layout_width="111dp"
+                        android:layout_height="match_parent"
+                        android:text="Save" />
+
+                    <Button
+                        android:id="@+id/Cancel"
+                        android:layout_width="111dp"
+                        android:layout_height="match_parent"
+                        android:text="Cancel" />
+                </TableRow>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ToHide"
+                android:layout_width="match_parent"
+                android:layout_height="347dp"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <EditText
+                    android:id="@+id/Position"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Position"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Position" />
+
+                <EditText
+                    android:id="@+id/Company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Company"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Company" />
+
+                <EditText
+                    android:id="@+id/Site"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Site"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Site" />
+
+                <EditText
+                    android:id="@+id/Messagery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Messagery"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Messagery" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>
